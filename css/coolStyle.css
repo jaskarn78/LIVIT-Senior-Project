@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Below line is used for online Google font */
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+
+
+input[type=submit]{
+width:80%;
+border:3px solid rgb(200, 200, 207);
+height:42px;
+padding:5px;
+border-radius:3px;
+margin:10px 10px 20px 35px;
+border:1px solid green;
+}
+label{
+margin-left:35px;
+font-family: 'Droid Serif', serif;
+}
+
+
+
+
+////down is test for slideout- will fuck up code
+body {
+  direction: rtl;
+}
+
+#slideout {
+  background: #666;
+  position: relative;
+  width: 300px;
+  height: 80px;
+  right: -300px;
+  margin-top: 50px;
+}
+
+.metro {
+  display: inline-block;
+  padding: 5px;
+  margin: 50px;
+  width: 1px;
+  height: 19.5px;
+  background: #117ebb;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.metro.three-d {
+  position: relative;
+  box-shadow: 1px 1px #003355, 2px 2px #003355, 3px 3px #003355;
+  transition: all 0.1s ease-in;
+}
+
+.metro.three-d:active {
+  box-shadow: none;
+  top: 3px;
+  left: 3px;
+}
+
+.metro.three-d:after {
+  transition: all 0.1s ease-in;
+  position: absolute;
+  top: 0px;
+  left: -13px;
+  content: " ";
+  width: 0;
+  height: 2px;
+  border-top: 13px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 13px solid #117ebb;
+  border-radius: 0px 0px 0px 20px;
+}
+
+#containclickme {
+  background: transparent;
+  float: left;
+  height: 100%;
+  bottom: 100%;
+  width: 20px;
+  margin-top: -25px;
+}
+
+#click-me {
+  position: right;
+  left: 30px;
+}
